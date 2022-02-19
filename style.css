@@ -18,7 +18,7 @@ body {
   font-weight: 400;
   color: #555;
   overflow-x: hidden;
-  background-image: url('/images/pattern-background-desktop.svg');
+  background-image: url('/pattern-background-desktop.svg');
   background-size: cover;
   background-repeat: repeat;
   height: 100vh;
