@@ -1,0 +1,138 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --Pale-blue: hsl(225, 100%, 94%);
+  --Bright-blue: hsl(245, 75%, 52%);
+}
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+body {
+  font-family: "Red Hat Display", sans-serif;
+  font-family: "Red Hat Text", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+  overflow-x: hidden;
+  background-image: url('/images/pattern-background-desktop.svg');
+  background-size: cover;
+  background-repeat: repeat;
+  height: 100vh;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+
+main {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    background-color: white;
+    width: 360px;
+    border-radius: 8px;
+    padding-bottom: 3rem;
+    
+
+}
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    gap: 1.5rem;
+}
+.info h2 {
+    font-size: 2.5rem;
+    font-weight: 900;
+    color:hsl(223, 47%, 23%);
+}
+.info p {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color:hsl(224, 23%, 55%);
+    text-align: center;
+}
+img {
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    background-color: hsl(225, 100%, 98%);
+    padding: 1rem 2rem;
+    border-radius: 12px;
+    margin-bottom: 1.6rem;
+}
+.icon p {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-right: 5rem;
+    color:hsl(223, 47%, 23%) ;
+    font-size: 1.3rem;
+    font-weight: 700;
+
+}
+.icon p span {
+    color:hsl(225, 56%, 83%) ;
+}
+.icon a {
+    background-color: none;
+    border: none;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--Bright-blue);
+    border-bottom: 2px solid var(--Bright-blue);
+}
+.icon a:hover{
+    color:hsl(223, 29%, 47%) ;
+    border-bottom: none;
+}
+.call-to-action {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+.call-to-action :first-child {
+    background-color: var(--Bright-blue);
+    padding: 2rem 8rem;
+    color: white;
+    font-size: 1.6rem;
+    border-radius: 12px;
+    box-shadow: 0 0 3px 0px rgba(0, 0, 0, 0.795);
+}
+.call-to-action :first-child:hover {
+    background-color: #51ace8;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+.call-to-action :last-child {
+    color: #666;
+    font-size: 1.3rem;
+    font-weight: 900;
+}
+.call-to-action :last-child:hover {
+    color: black;
+    font-size: 1.6rem;
+}
